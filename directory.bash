@@ -7,7 +7,7 @@ time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "${time}" >>WebLog.csv
 #Monitor command
 
-nethogs -t  >> WebLog.csv 
+nethogs -t -c 5 >> WebLog.csv 
 
 #duplicate
 #awk -F '|' '!x[$1]++' WebLog.csv > Web_Log.csv
