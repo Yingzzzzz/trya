@@ -10,7 +10,7 @@ echo "${time}" >>WebLog.csv
 nethogs -t -c 5 >> WebLog.csv 
 
 #duplicate
-#awk -F '|' '!x[$1]++' WebLog.csv > Web_Log.csv
+#awk -F '|' '!x[$1]++' WebLog.csv >> Web_log.csv
 #output
 #sed -i 's/\s\+/,/g' Web_Log.csv
 #awk -F '|' '!x[$1]++' Web_Log.csv
